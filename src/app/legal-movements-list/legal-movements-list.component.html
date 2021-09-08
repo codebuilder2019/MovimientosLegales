@@ -1,0 +1,50 @@
+<div id="main-container">
+    <h1>Movimientos Legales</h1>
+    <br>
+    <!-- Caja de texto para filtrar movimientos por idMov -->
+    <div><input type="text" placeholder="idMov" [(ngModel)]="filter" (ngModelChange)="filterByIdMov()"></div>
+    <br>
+
+    <!-- Cabecera con el nombre de cada columna -->
+    <div class="form-row-header d-none d-sm-block bordered-section">
+        <div class="form-row">
+            <div class="col-sm-2">
+                <p><b>ID Movimiento</b></p>
+            </div>
+            <div class="col-sm-3">
+                <div style="display: flex; flex-wrap: wrap; align-items: center">
+                    <p><b>Fecha creacion</b></p>
+                    &nbsp;
+                    <!-- Toggle button para cambiar el orden ascendente y desendente respeto a la fecha -->
+                    <button class="common-button" (click)="orderAscendent()">{{ order }}</button>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <p><b>Detalle</b></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Impresion de cada registro -->
+    <div *ngFor="let legalMovement of legalMovements | paginate: { itemsPerPage: 10, currentPage: page }">
+        <div id="bill" class="unspaced-form-row bordered-section">
+            <div class="col-sm-2 d-flex">
+                <p>{{legalMovement.idMov}}</p>
+            </div>
+            <div class="col-sm-3 d-flex">
+                <p>{{legalMovement.fechaCreacion | date:'medium' }}</p>
+            </div>
+            <div class="col-sm-7 d-flex">
+                <div style="display: flex; flex-grow: 1; align-items: center; justify-content: space-between">
+                    <p>{{legalMovement.detalle}}</p>
+                    &nbsp;
+                    <!-- Direccionamiento a la vista de detalles del movimiento seleccionado -->
+                    <button class="common-button" (click)="onSelect(legalMovement)">Mas info.</button>
+                </div>
+            </div>
+        </div>  
+    </div>
+    <br>
+    <!-- Uso de paginacion -->
+    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+</div>

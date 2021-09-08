@@ -1,0 +1,12 @@
+<div id="main-container">
+    <h1>Detalle Movimiento Legal</h1>
+    <br>
+    <div class="rounded-container">
+        <!-- Se muestra cada uno de las claves y valores del movimiento actual -->
+        <div *ngFor="let key of Object.keys(legalMovement)">
+            <p><b>{{key}}:</b> {{legalMovement[key]}}</p>
+        </div>
+        <br>
+        <button class="common-button" routerLink="/legalMovementsList">Volver</button>
+    </div>
+</div>

@@ -1,1 +1,232 @@
-/* You can add global styles to this file, and also import other style files */
+a {
+  color: #078930;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #04521d;
+  text-decoration: none;
+}
+
+body {
+padding: 0px 0px;
+background: rgb(6,87,32);
+}
+
+h1 {
+color: #fcdd09;
+font-weight: bold;
+margin: 0 0 10px 0;
+}
+
+h2 {
+  color: #fcdd09;
+  font-weight: bold;
+  margin: 0 0 7px 0;
+}
+
+h3 {
+  color: #fcdd09;
+  margin: 0 0 7px 0;
+}
+
+hr {
+margin-top: 10px;
+margin-bottom: 10px;
+background-color: #fcdd09;
+}
+
+.bordered-section {
+  border-style: solid;
+  border-width: thin;
+  border-color:#cccccc;
+  background: white;
+}
+
+.centered-content {
+display: flex;
+justify-content: center;
+}
+
+.common-text {
+  color: white;
+  font-size: 14px;
+}
+
+.common-button {
+color: white;
+background: #05571f;
+border: none;
+border-radius: 4px;
+padding: 6px 8px;
+margin: 0 0;
+}
+
+.common-button:hover {
+color: #fcdd09;
+}
+
+input {
+flex-grow: 1;
+border: 0px;
+border-radius: 4px;
+padding: 4px 4px;
+color: #078930;
+}
+
+#asd {
+  color: white;
+  background: #CC0000;
+  background: #006600;
+  border-radius: 4px;
+  padding: 4px 4px;
+}
+
+.field {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    background: #fcdd09;
+    color: #078930;
+    border-radius: 6px;
+    padding: 6px 6px;
+    margin: 0px 0px;
+}
+
+.grid-element {
+  margin: 5px 0px;
+}
+
+.path-text {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.input-field {
+  background: #fcdd09;
+  color: #078930;
+  border-radius: 6px;
+  padding: 6px 6px;
+  margin: 5px 0px;
+  display: flex;
+}
+
+#main-container {
+  padding: 12px 10px;
+}
+
+.background-color1 {
+    background-color: #fcdd09;
+}
+ 
+p {
+  margin: 0 0;
+}
+
+.message {
+  display: none;
+  font-weight: bold;
+}
+
+.rounded-container {
+  border-radius: 10px;
+  padding: 10px 10px;
+  background: white;
+}
+
+.form-row-header {
+  padding: 10px 10px;
+}
+
+.unspaced-form-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.unspaced-form-row > .col,
+.unspaced-form-row > [class*="col-"] {
+  padding: 10px 10px;
+}
+
+.vertically-centered {
+  display: flex;
+  align-items: center;
+}
+
+/* ----------------------------------------
+  Spaces
+*/
+
+.botton-space-s {
+  margin-bottom: 5px;
+}
+
+.botton-space-m {
+  margin-bottom: 10px;
+}
+
+/* ----------------------------------------
+  Menu
+*/
+
+/* The "a" selector doesn't apply to sub menu-options, thus that info is re-included here. */
+.menu-option {
+    color: #078930;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.menu-option:hover {
+    color: #04521d;
+    text-decoration: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23078930' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #078930;
+}
+
+.navbar-brand{
+  padding: 0 0;
+}
+
+
+/* ----------------------------------------
+  Add
+*/
+.feature-field {
+  background: #fcdd09;
+  color: #078930;
+  border-radius: 6px;
+  padding: 6px 6px;
+  margin: 5px 0px;
+}
+
+.feature-input {
+  flex-grow: 1;
+  border: 0px;
+  border-radius: 4px;
+  padding: 4px 4px;
+}
+
+.ngx-pagination {
+  padding-left: 0px !important;
+}
+
+.ngx-pagination li a {
+  color:#078930 !important;
+  background:#fcdd09 !important;
+}
+
+.ngx-pagination a:hover {
+  background:purple !important;
+  background:white !important;
+}
